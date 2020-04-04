@@ -19,5 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => 'query', 'namespace' => 'Queries'], function(){
     Route::get('/get-user-with-events', 'GetUserWithEvents@run');
     Route::get('/get-user-with-events-gt-date', 'GetUserWithEventsGtDate@run');
-    Route::get('/get-user-with-events-gt-date', 'GetUserWithEventsGtDate@run');
+    Route::get('/get-users-with-events-between-dates', 'GetUsersWithEventsBetweenDates@run');
+    Route::get('/get-users-having-events-in-date-range', 'GetUsersHavingEventsInRange@run');
+    Route::get('/get-users-with-events-with-ranged-dates', 'GetUsersWithEventsWithRangedDates@run');
 });
